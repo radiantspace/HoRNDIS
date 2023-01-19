@@ -32,11 +32,16 @@ sudo kextload /Library/Extensions/HoRNDIS.kext
 * Delete the `HoRNDIS.kext` under `/System/Library/Extensions` and `/Library/Extensions` folder
 * Restart your computer
 
-## Building the source
+## Building & Install from the source
 
 * `git clone` the repository
 * Simply running xcodebuild in the checkout directory should be sufficient to build the kext.
 * If you wish to package it up, you can run `make` to assemble the package in the build/ directory
+* `sudo mv ./build/Release/HoRNDIS.kext /Library/Extensions/`
+* `sudo chown -R root:wheel /Library/Extensions/HoRNDIS.kext/`
+* `/usr/bin/kmutil install --volume-root /Library/Extensions/HoRNDIS.kext`
+* `sudo kextload /Library/Extensions/HoRNDIS.kext`
+* restart your Mac
 
 ## Debugging and Development Notes
 

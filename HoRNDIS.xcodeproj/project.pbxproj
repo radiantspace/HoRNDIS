@@ -132,6 +132,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 42BCD8991645AFC500683BF7;
@@ -241,11 +242,11 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-Wno-inconsistent-missing-override";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx13.1;
 				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Debug;
@@ -296,10 +297,10 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-Wno-inconsistent-missing-override";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx13.1;
 				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Release;
@@ -315,6 +316,7 @@
 				GCC_PREFIX_HEADER = "HoRNDIS-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "HoRNDIS-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				MODULE_VERSION = 9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuawise.kexts.HoRNDIS;
@@ -334,6 +336,7 @@
 				GCC_PREFIX_HEADER = "HoRNDIS-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "HoRNDIS-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				MODULE_VERSION = 9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuawise.kexts.HoRNDIS;
